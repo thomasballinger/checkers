@@ -4,5 +4,17 @@ def display(board):
         print row
 
 
-board = [[0] * 8 for x in range(8)]
+
+top = [['x' if col % 2 == row % 2 else ' '
+        for col in range(8)]
+      for row in range(3)]
+
+middle = [[' '] * 8 for x in range(2)]
+
+bottom = [['o' if col % 2 != row % 2 else ' '
+           for col in range(8)]
+          for row in range(3)]
+
+board = top + middle + bottom
+
 display(board)
