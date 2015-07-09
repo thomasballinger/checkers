@@ -2,6 +2,7 @@
 def display(board):
     for row in board:
         print row
+    print '\n \n \n \n' 
 
 def initial_board():
     top = [['x' if col % 2 == row % 2 else ' '
@@ -48,6 +49,7 @@ def check_move_valid(board, initial_row, initial_col, final_row, final_col):
 
 board = initial_board()
 move(board, 2, 0, 3, 1)
+display(board)
 move(board, 3, 1, 4, 0)
 
 display(board)
