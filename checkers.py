@@ -16,6 +16,10 @@ def initial_board():
     board = top + middle + bottom
     return board
 
+def move(board, row, col, row2, col2):
+    board[row2][col2] = board[row][col]
+    board[row][col] = ' '
+
 board = initial_board()
 
 display(board)
