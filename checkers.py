@@ -1,3 +1,8 @@
+def is_empty(board, row, col):
+  if board[row][col] == ' ':
+    return True
+  else: 
+    return False
 
 def display(board):
     for row in board:
